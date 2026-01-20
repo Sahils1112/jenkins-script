@@ -25,7 +25,7 @@ pipeline{
         }
         stage('docker compose up'){
             steps{
-                echo "starting the containers"
+                echo "starting the container"
                 sh 'docker-compose up -d --build'
             }
         }
