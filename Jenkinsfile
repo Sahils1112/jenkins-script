@@ -19,7 +19,7 @@ pipeline{
         }
         stage('docker compose down'){
             steps{
-                echo "shutting the containers"
+                echo "shutting the container"
                 sh 'docker-compose down || true'
             }
         }
